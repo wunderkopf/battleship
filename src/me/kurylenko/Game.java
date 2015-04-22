@@ -16,11 +16,7 @@ public class Game {
 		boolean tryAgain = true;
 
 		while (tryAgain) {
-
-			// System.out.print("\u001b[2J");
-			// System.out.flush();
-			// Runtime.getRuntime().exec("clear");
-			// for (int i = 0; i < 50; ++i) System.out.println();
+			
 			@SuppressWarnings("resource")
 			Scanner scanner = new Scanner(System.in);
 			System.out.println("Would you like to place ships randomly? (y/n)");
@@ -41,8 +37,6 @@ public class Game {
 				// save <>, load <>, quit, exit, help
 				if (!user.fire(bot)) {
 					System.out.print("> ");
-					//@SuppressWarnings("resource")
-					//Scanner scanner = new Scanner(System.in);
 					userReply = scanner.nextLine();
 
 					String[] command = userReply.split(" ");
@@ -91,9 +85,6 @@ public class Game {
 			}
 
 			System.out.println("Play again? (y/n)");
-
-			//@SuppressWarnings("resource")
-			//Scanner scanner = new Scanner(System.in);
 			userReply = scanner.nextLine();
 
 			if (userReply.equalsIgnoreCase("n") || userReply.equalsIgnoreCase("no"))

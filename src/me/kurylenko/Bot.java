@@ -165,8 +165,6 @@ public class Bot extends Player  {
 								x = random.nextInt(9);
 								y = random.nextInt(9);
 
-								//if (this.enemyField[y][x] == State.EMPTY)
-								//if (isGood(this.enemyField, x, y, State.KILL_ONE) && isGood(this.enemyField, x, y, State.KILL_ALL))
 								if (aimAt(x, y))
 									break got_xy;
 							}
@@ -179,8 +177,6 @@ public class Bot extends Player  {
 					x = random.nextInt(9);
 					y = random.nextInt(9);
 
-					//if (this.enemyField[y][x] == State.EMPTY)
-					//if (isGood(this.enemyField, x, y, State.KILL_ONE) && isGood(this.enemyField, x, y, State.KILL_ALL))
 					if (aimAt(x, y))
 						break;
 				}
